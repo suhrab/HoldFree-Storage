@@ -1,0 +1,37 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Anton
+ * Date: 7/26/13
+ * Time: 1:06 PM
+ * To change this template use File | Settings | File Templates.
+ */
+
+/**
+ * Имя пользователя БД
+ */
+define('DB_USER', 'root');
+
+/**
+ * Пароль пользователя БД
+ */
+define('DB_PASS', '12345');
+
+/**
+ * Хось БД
+ */
+define('DB_HOST', '127.0.0.1');
+
+/**
+ * Порт БД
+ */
+define('DB_PORT', '3306');
+
+/**
+ * Имя БД
+ */
+define('DB_NAME', 'holdfree-storage1');
+
+define('DIR_UPLOAD', dirname(__FILE__) . '/upload');
+
+define('SERVER_URL', 'http://' . $_SERVER['HTTP_HOST']);
