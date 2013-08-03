@@ -34,4 +34,4 @@ define('DB_NAME', 'holdfree-storage1');
 
 define('DIR_UPLOAD', dirname(__FILE__) . '/upload');
 
-define('SERVER_URL', 'http://' . $_SERVER['HTTP_HOST']);
+define('SERVER_URL', 'http://' . $_SERVER['HTTP_HOST'] . ':' . (empty($_SERVER['SERVER_PORT']) ? 80 : $_SERVER['SERVER_PORT']));
