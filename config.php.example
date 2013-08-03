@@ -15,7 +15,7 @@ define('DB_USER', 'root');
 /**
  * Пароль пользователя БД
  */
-define('DB_PASS', '12345');
+define('DB_PASS', '232323');
 
 /**
  * Хось БД
@@ -25,7 +25,7 @@ define('DB_HOST', '127.0.0.1');
 /**
  * Порт БД
  */
-define('DB_PORT', '3306');
+define('DB_PORT', '8889');
 
 /**
  * Имя БД
@@ -34,4 +34,4 @@ define('DB_NAME', 'holdfree-storage1');
 
 define('DIR_UPLOAD', dirname(__FILE__) . '/upload');
 
-define('SERVER_URL', 'http://' . $_SERVER['HTTP_HOST'] . ':' . (empty($_SERVER['SERVER_PORT']) ? 80 : $_SERVER['SERVER_PORT']));
+define('SERVER_URL', 'http://' . $_SERVER['HTTP_HOST']);
