@@ -110,8 +110,8 @@ SQL;
 $app->get('/api/info', function() use ($app) {
     echo json_encode(
         array(
-            'disk_total_space' => human_filesize(disk_total_space(DIR_UPLOAD)),
-            'disk_free_space' => human_filesize(disk_free_space(DIR_UPLOAD)),
+            'disk_total_space' => disk_total_space(DIR_UPLOAD),
+            'disk_free_space' => disk_free_space(DIR_UPLOAD),
             'files_total' => Files::count()
         )
     );
