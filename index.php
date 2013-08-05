@@ -137,7 +137,7 @@ $app->get('/getFile/{uuid}', function($file_uuid) use ($app) {
     header('Expires: 0');
     header('Cache-Control: must-revalidate');
     header('Pragma: public');
-    header('Content-Length: ' . filesize($file->filesize));
+    header('Content-Length: ' . $file->filesize);
     ob_clean();
     flush();
     readfile($file->absolute_filepath);
